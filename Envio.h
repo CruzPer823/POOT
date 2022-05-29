@@ -23,6 +23,6 @@ class Envio{
     std::string get_Ciudad();
     std::string get_Estado();
     int get_CodigoPostal();
-    double CalculaCosto();
+    double calculaCosto(costo);
 
 };
