@@ -5,12 +5,13 @@ Envio::Envio(){
 
 }
 
-Envio::Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal){
+Envio::Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal, dobule costo){
   this -> nombre = nombre;
   this -> direccion = direccion;
   this -> ciudad = ciudad;
   this -> estado = estado;
   this -> codigo_postal = codigo_postal;
+  this -> costo = costo;
 }
 
 void Envio::set_Nombre(std::string nombre){
@@ -51,4 +52,8 @@ void Envio::set_CodigoPostal(int){
 
 int Envio::get_CodigoPostal(){
   return codigo_postal;
+}
+
+dobule Envio::calculaCosto(dobule costo){
+  return costo;
 }
