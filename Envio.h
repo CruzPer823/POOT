@@ -7,9 +7,10 @@ class Envio{
     std::string direccion;
     std::string ciudad;
     std::string estado;
+    double costo;
   public:
     Envio();
-    Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal);
+    Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal, double costo);
 
     void set_Nombre(std::string);
     void set_Direccion(std::string);
@@ -22,5 +23,6 @@ class Envio{
     std::string get_Ciudad();
     std::string get_Estado();
     int get_CodigoPostal();
+    double CalculaCosto();
 
 };
