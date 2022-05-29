@@ -5,7 +5,7 @@ Envio::Envio(){
 
 }
 
-Envio::Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal, dobule costo){
+Envio::Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal){
   this -> nombre = nombre;
   this -> direccion = direccion;
   this -> ciudad = ciudad;
