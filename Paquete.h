@@ -22,6 +22,7 @@ class Paquete:public Envio{
         double get_Prof();
         double get_Peso();
         double get_Costok();
+        std::string imprimir_datos();
 };
 
 #endif
