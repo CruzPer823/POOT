@@ -1,7 +1,9 @@
+#ifndef ENVIO_H_INCLUDED
+#define ENVIO_H_INCLUDED
 #include <string>
 
 class Envio{
-  private:
+  protected:
     std::string nombre;
     int codigo_postal;
     std::string direccion;
@@ -23,6 +25,7 @@ class Envio{
     std::string get_Ciudad();
     std::string get_Estado();
     int get_CodigoPostal();
-    double calculaCosto(costo);
+    double calculaCosto(double);
 
 };
+#endif

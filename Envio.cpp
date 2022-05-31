@@ -54,6 +54,6 @@ int Envio::get_CodigoPostal(){
   return codigo_postal;
 }
 
-dobule Envio::calculaCosto(dobule costo){
+double Envio::calculaCosto(double costo){
   return costo;
 }
