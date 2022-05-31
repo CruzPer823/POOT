@@ -1,59 +1,39 @@
 #include "Envio.h"
 #include <string>
+#include <iostream>
 
 Envio::Envio(){
 
 }
 
-Envio::Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal){
-  this -> nombre = nombre;
-  this -> direccion = direccion;
-  this -> ciudad = ciudad;
-  this -> estado = estado;
-  this -> codigo_postal = codigo_postal;
-  this -> costo = costo;
-}
-
-void Envio::set_Nombre(std::string nombre){
-  this -> nombre = nombre;
-}
-
-std::string Envio::get_Nombre(){
-  return nombre;
-}
-
-void Envio::set_Direccion(std::string direccion){
-  this -> direccion = direccion;
-}
-
-std::string Envio::get_Direccion(){
-  return direccion;
-}
-
-void Envio::set_Ciudad(std::string ciudad){
-  this -> ciudad = ciudad;
-}
-
-std::string Envio::get_Ciudad(){
-  return ciudad;
-}
-
-void Envio::set_Estado(std::string Estado){
-  this -> estado = estado;
-}
-
-std::string Envio::get_Estado(){
-  return estado;
-}
-
-void Envio::set_CodigoPostal(int){
-  this -> codigo_postal = codigo_postal;
-}
-
-int Envio::get_CodigoPostal(){
-  return codigo_postal;
+Envio::Envio(std::string _nombreR, std::string _direccionR, 
+    std::string _ciudadR, std::string _estadoR, int _codigo_postalR,
+    std::string _nombreD, std::string _direccionD, std::string _ciudadD, 
+    std::string _estadoD, int _codigo_postalD, double _costo){
+  nombreR = _nombreR;
+  direccionR = _direccionR;
+  ciudadR = _ciudadR;
+  estadoR = _estadoR;
+  codigo_postalR = _codigo_postalR;
+  nombreD = _nombreD;
+  direccionD = _direccionD;
+  ciudadD = _ciudadD;
+  estadoD = _estadoD;
+  codigo_postalD = _codigo_postalD;
+  costo=_costo;
 }
 
 double Envio::calculaCosto(double costo){
+  costo=costo;
   return costo;
+}
+
+std::string Envio::imprimirDatos(){
+  std::cout<<"\n***DATOS DEL ENVIO***\n\n"<<"-Remitente-\n"
+  <<"Nombre: "<<nombreR<<"\n"<<"Estado: "<<estadoR<<"\n"
+  <<"Ciudad: "<<ciudadR<<"\n"<<"Direccion: "<<direccionR<<"\n"
+  <<"Codigo postal: "<<codigo_postalR<<"\n\n"<<"-Destinatario-\n"
+  <<"Nombre: "<<nombreD<<"\n"<<"Estado: "<<estadoD<<"\n"
+  <<"Ciudad: "<<ciudadD<<"\n"<<"Direccion: "<<direccionD<<"\n"
+  <<"Codigo postal: "<<codigo_postalD<<"\n";
 }

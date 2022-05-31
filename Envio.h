@@ -4,28 +4,25 @@
 
 class Envio{
   protected:
-    std::string nombre;
-    int codigo_postal;
-    std::string direccion;
-    std::string ciudad;
-    std::string estado;
+    std::string nombreR;
+    int codigo_postalR;
+    std::string direccionR;
+    std::string ciudadR;
+    std::string estadoR;
+    std::string nombreD;
+    int codigo_postalD;
+    std::string direccionD;
+    std::string ciudadD;
+    std::string estadoD;
     double costo;
   public:
     Envio();
-    Envio(std::string nombre, std::string direccion, std::string ciudad, std::string estado, int codigo_postal);
-
-    void set_Nombre(std::string);
-    void set_Direccion(std::string);
-    void set_Ciudad(std::string);
-    void set_Estado(std::string);
-    void set_CodigoPostal(int);
-
-    std::string get_Nombre();
-    std::string get_Direccion();
-    std::string get_Ciudad();
-    std::string get_Estado();
-    int get_CodigoPostal();
+    Envio(std::string nombreR, std::string direccionR, 
+    std::string ciudadR, std::string estadoR, int codigo_postalR,
+    std::string nombreD, std::string direccionD, std::string ciudadD, 
+    std::string estadoD, int codigo_postalD,double costo);
     double calculaCosto(double);
+    std::string imprimirDatos();
 
 };
 #endif

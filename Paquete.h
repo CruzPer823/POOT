@@ -5,23 +5,16 @@
 
 class Paquete:public Envio{
     protected:
-        double largo,ancho,prof,peso,costok;
+        double largo,ancho,profun,peso,costok;
     public:
-        Paquete(std::string, std::string, std::string, 
-        std::string, int,double,double,double,
-        double,double,double);
+        Paquete();
+        Paquete(std::string nombreR, std::string direccionR, 
+    std::string ciudadR, std::string estadoR, int codigo_postalR,
+    std::string nombreD, std::string direccionD, std::string ciudadD, 
+    std::string estadoD, int codigo_postalD,double costo,double largo,double ancho,double profun,
+    double peso,double costok);
         double calculaCosto(double);
-        void set_Largo(double);
-        void set_Ancho(double);
-        void set_Prof(double);
-        void set_Peso(double);
-        void set_Costok(double);
-
-        double get_Largo();
-        double get_Ancho();
-        double get_Prof();
-        double get_Peso();
-        double get_Costok();
+        std::string imprimirDatos();
 };
 
 #endif
